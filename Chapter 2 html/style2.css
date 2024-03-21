@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*style for the body*/
+body {
+    font-family: 'Bangers', cursive;
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+/*heading style*/
+header {
+    background-color: #1a1a1a;
+    font-family: 'Retro', cursive;
+    padding: 20px ;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+/*style for the hover effect*/
+nav ul li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+.box {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #333333;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.box h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+/*called both id's because the style needed for them is the same*/
+.actors-grid,
+.characters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/*called both id's because the style needed for them is the same*/
+.actor,
+.character {
+    background-color: #666666;
+    padding: 10px;
+    border-radius: 5px;
+}
+/*button style*/
+.btn {
+    background-color: #ff0008;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+/* i used this to add a hover effect*/
+.btn:hover {
+    background-color: #cc0000;
+}
+
+.main-content .box {
+    text-align: center;
+    padding: 80px;
+}

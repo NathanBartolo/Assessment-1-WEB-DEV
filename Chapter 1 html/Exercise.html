@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Create a web page containing information on your favourite recipe. The page should include
+
+Appropriate tags to structure text (e.g. h and p tags).
+A h1 tag for the recipe name
+A p tag for a description of the recipe
+A h2 tag for the ingredients
+An unorder list for the ingredients
+An h2 tag for the method
+An order list for the steps involved in the recipe 'method'
+Make sure the code is indented and spaced properly.
+Add comments explaining what each element does.-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda's Broasted Chicken Recipe</title>
+    <style>
+        /* this is the style for the whole body */
+        body {
+            background-color: beige;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #container {
+            display: inline-block;
+            text-align: left;
+        }
+
+        h1 {
+            text-align: center;
+            color: #cc0000;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 50%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        p {
+            margin: 20px 0;
+            color: #202020;
+        }
+
+        /* Ingredient and Method Styles */
+        h2 {
+            background-color: #cc0000;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h4 {
+            color: #cc0000;
+        }
+
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        /* Box Styles */
+        .box {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            margin-top: 50px;
+            text-align: left;
+            display: inline-block;
+            width: 70;
+            max-width: 800px;
+            
+        }
+
+        .box:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        /* Method Steps Style */
+        ol {
+            margin-left: 20px;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- i created a div class for the whole content -->
+    <div id="container">
+        <!-- this is the div for the heading type box -->
+        <div class="box">
+
+            <h1>Amanda's Broasted Chicken</h1>
+            <!--this tag will display the image that i put-->
+            <img src="https://d2gaa3d0ian8bd.cloudfront.net/HiMenus/Uploads/ProfileImage/1c941315-c013-4027-abbe-b6636e1da47c-133005338029364453.jpeg" alt="logo" class="logo">
+
+            <p>Amanda's broasted chicken is one of the OG food spots here in UAE. They are famous for their tasty and juicy broasted chicken that has been serving Dubai for years now. Broasting is a cooking process that combines two techniques: pressure cooking and frying. This method is used to make the chicken more juicy and tender on the inside but also crispy on the outside.</p>
+            <!--div for the ingredients box-->
+            <div class="box">
+                <h2>Ingredients</h2>
+
+                <h4>For marinating</h4>
+                <!--this tag will create a list for the indgredients-->
+                <ul style="list-style-type:square">
+                    <li>1 Whole chicken/chicken drumsticks and thighs</li>
+                    <li>1/4 Cup buttermilk</li>
+                    <li>1 Tsp Black pepper powder</li>
+                    <li>Salt to taste</li>
+                    <li>6 minced garlic cloves</li>
+                </ul>
+
+                <h4>For coating</h4>
+                <ul style="list-style-type:square">
+                    <li>2 cups all-purpose flour</li>
+                    <li>3/4 cup cornflour</li>
+                    <li>2 tsp Black pepper powder</li>
+                    <li>1 tbsp chilli powder</li>
+                    <li>2 tbsp mixed herbs or Italian seasoning</li>
+                    <li>2 cups panko bread crumbs</li>
+                    <li>2 Eggs</li>
+                    <li>1/4 cup water</li>
+                    <li>Oil as needed</li>
+                    <li>Salt to taste</li>
+                </ul>
+            </div>
+            <!--div for the methods-->
+            <div class="box">
+                <h2>Method</h2>
+                <ol>
+                    <li>In a bowl, mix buttermilk, minced garlic, pepper, and salt together. Immerse the chicken in this marinade and cover it with plastic wrap. Let this marinade sit for at least 12 hours.</li>
+                    <li>In a bowl, mix all-purpose flour, cornflour, pepper powder, chilli powder, herbs, and salt well. In another bowl, whisk egg and water together. Take panko crumbs on a plate and add mixed herbs and a pinch of salt to it.</li>
+                    <li>Dip the marinated chicken in the flour mix, then dip it in the egg, and then finally in panko crumbs mixture. Coat the chicken well and carefully put it in the cooker. Cover the pressure cooker and cook for about 1 to 2 whistles.</li>
+                    <li>After 2 whistles, turn off the flame and let the cooker stand for 5 minutes. Using a spoon, release the pressure from the cooker and open the lid. Switch on the flame again and fry the chicken until you get a crispy skin; it should take around 8-10 minutes. Once done, drain the chicken on tissue paper to remove excess oil.</li>
+                    <li>Drizzle some hot sauce over the chicken for extra spice. Serve hot with mayo-dip and ketchup alongside mac-n-cheese, fries, or mashed potatoes.</li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

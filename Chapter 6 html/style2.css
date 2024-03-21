@@ -1,0 +1,76 @@
+/*body style*/
+body {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/956/995/676/generative-art-touchdesigner-noise-displacement-hd-wallpaper-preview.jpg');/*insert a bg image*/
+    background-size: cover;/*to make the img a bg cover*/
+}
+/*heading style*/
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em; /* Increased font size for the header */
+}
+
+#container {
+    margin-top: 50px;
+}
+/*color display style*/
+#color-display {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 10px solid #000;
+    border-radius: 10px;
+    font-size: 0.6em;
+    line-height: 200px;
+}
+
+#options-container {
+    margin-top: 20px;
+}
+/* choices box style*/
+.option {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+/* hover effect*/
+.option:hover {
+    transform: scale(1.1);
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em; /* Adjusted font size for the message */
+}
+
+#score {
+    margin-top: 10px;
+    font-size: 1.2em; /* Adjusted font size for the score */
+}
+
+#play-again-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #af4c4c;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1em; /* Adjusted font size for the button */
+    transition: background-color 0.3s ease;
+}
+/*play again hover*/
+#play-again-btn:hover {
+    background-color: #632626;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<!---In a new index.html file display three images (that you would be legally allowed to use for a commercial project) and do the following:
+
+Select a theme which ties all three images together.
+Give each image an appropriate alt attribute.
+Give each image appropriate width and height attributes (retaining its original aspect ratio).
+Give each image an appropriate title attribute.
+Use CSS filters to change the appearance of all three of your images.
+Ensure each image is under 300kb.
+Underneath each image, provide information on its copyright license.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link for the css file-->
+    <link rel="stylesheet" href="exercise.css">
+    <title>Dubai Wonders</title>
+</head>
+<body>
+    <!--i added a header tag for my heading-->
+    <header>
+        <h1>Dubai Wonders</h1>
+        <p>Experience the vibrant cityscape and architectural marvels of Dubai.</p>
+    </header>
+    <!--break tag to add a gap for the header and the content-->
+    <br>
+    <br>
+    <!-- i called a div class for the main content of my code-->
+    <div class="image">
+        <!--this is the code for the picture and it has the same format in all three-->
+        <div>
+            <h2>Downtown Dubai</h2>
+            <!--code to fetch the img-->
+            <img src="downtown.jpg" alt="Downtown Dubai" title="Downtown" width="300" height="200">
+            <p>Copyright: © David Rodrigo</p>
+        </div>
+        <div>
+            <h2>Dubai Mall</h2>
+            <img src="dubai mall.jpg" alt="Dubai Mall" title="DM" width="300" height="200">
+            <p>Copyright: © Wael Hneini</p>
+        </div>
+        <div>
+            <h2>Burj Al Arab</h2>
+            <img src="al arab.jpg" alt="Burj Al Arab" title="Al Arab" width="300" height="200">
+            <p>Copyright: © Christoph Schulz</p>
+        </div>
+    </div>
+</body>
+</html>

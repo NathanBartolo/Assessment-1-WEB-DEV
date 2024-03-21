@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Further Extension Problems
+The radio show loved the sampler you made for them before, but they'd like to give a more advanced system a go. In a new directory, build on top of your previous sampler and include the following new ideas:
+
+The show would like to include a text to speech feature. This feature allows presenters to type any text they like into a <textarea> element and have it converted to audio which then plays immediately. This new feature should be displayed in a seperate column next to the audio samples (see image below for reference);
+
+The show would like to include more audio samples. However, they only want sampler to display nine samples at a time. Create a system whereby the team can use "left" and "right" arrows to scroll through an extended bank of samples. The team is open to your creative ideas as to what audio is included on these new pages. When the first page is displayed, the "left arrow" should be hidden, and when the last page is displayed the "right" arrow should be hidden (prevents users from scrolling to blank sample pages or encountering errors);
+
+The team would like the length of the sample in seconds to be dynamically displayed underneath the sample title.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Sampler</title>
+    <!--link to external css-->
+    <link rel="stylesheet" href="style bonus.css">
+    <!--link to google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--called a header tag for heading-->
+    <header>
+        <h1>Alan Partridge Samples</h1>
+    </header>
+    <!--main content-->
+    <main>
+        <section class="content">
+            <!--this is the section for the text to speech function-->
+            <div class="text-to-speech">
+                <h2>Text to Speech</h2>
+                <!--text area to let the user type-->
+                <textarea id="textToSpeech" placeholder="Type your text here..."></textarea>
+                <!--button tag for the user to press convert to speech-->
+                <button id="textToSpeechBtn">Convert</button>
+            </div>
+            <!--sounboard container-->
+            <div class="soundboard">
+                <div class="samples">
+                    <!-- this tag gathers all the sample buttons for page 1 -->
+                    <button class="sample" data-audio="audio/ah-ha.mp3"><strong>1.</strong> ah-ha</button>
+                    <button class="sample" data-audio="audio/backofthenet.mp3"><strong>2.</strong> back of the net</button>
+                    <button class="sample" data-audio="audio/bangoutoforder.mp3"><strong>3.</strong> bang out of order</button>
+                    <button class="sample" data-audio="audio/dan.mp3"><strong>4.</strong> dan</button>
+                    <button class="sample" data-audio="audio/emailoftheevning.mp3"><strong>5.</strong> email of the evening</button>
+                    <button class="sample" data-audio="audio/hellopartridge.mp3"><strong>6.</strong> hello partridge</button>
+                    <button class="sample" data-audio="audio/iateascotchegg.mp3"><strong>7.</strong> i ate scotch egg</button>
+                    <button class="sample" data-audio="audio/imconfused.mp3"><strong>8.</strong> i'm confused</button>
+                    <button class="sample" data-audio="audio/countdown.mp3"><strong>9.</strong> countdown</button>
+                </div>
+                <div class="samples hidden">
+                    <!-- additional Sample buttons (Page 2) -->
+                    <button class="sample" data-audio="audio/drumroll.mp3"><strong>10.</strong> Drumroll</button>
+                    <button class="sample" data-audio="audio/fanum.mp3"><strong>11.</strong> Fanum</button>
+                    <button class="sample" data-audio="audio/hibily.mp3"><strong>12.</strong> Hibily</button>
+                    <button class="sample" data-audio="audio/yay.mp3"><strong>13.</strong> Yay</button>
+                    <button class="sample" data-audio="audio/what no.mp3"><strong>14.</strong> What, no?</button>
+                    <button class="sample" data-audio="audio/crazy.mp3"><strong>15.</strong> Crazy</button>
+                    <button class="sample" data-audio="audio/bt.mp3"><strong>16.</strong> BT</button>
+                    <button class="sample" data-audio="audio/cartoon.mp3"><strong>17.</strong> Cartoon</button>
+                    <button class="sample" data-audio="audio/access.mp3"><strong>18.</strong> Access</button>
+                </div>
+                <div class="navigation">
+                    <!-- Navigation buttons -->
+                    <button id="prevPage" class="nav-btn hidden">←</button>
+                    <button id="nextPage" class="nav-btn">→</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--link to external js file-->
+    <script src="index bonus.js"></script>
+</body>
+</html>

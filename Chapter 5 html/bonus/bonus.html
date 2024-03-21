@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--A local comedy radio show needs you to develop an audio soundboard for them. The soundboard will display a grid of Alan Partridge samples. When a sample is clicked the associated audio file will play. The audio samples for this exercise are located in Exercises/Audio Sampler. Your sampler must:
+
+Include all of the samples in the Audio Sampler directory;
+Display all samples on a single non-scrolling page;
+Make use of correct semantic markup;
+Display the correct sample name;
+Change the colour of the background, and text, when the user hovers over a sample;
+Include index.html, style.css and index.js files;
+Include creative styling for your background, sample buttons, fonts and hover effects;-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Sampler</title>
+    <!--link for the external css -->
+    <link rel="stylesheet" href="style.css">
+    <!--link for the font-->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--heading tag-->
+    <header>
+        <h1>Alan Partridge Samples</h1>
+    </header>
+    <!--this is the main soundboard section-->
+    <main>
+        
+        <section class="soundboard">
+            <!--called a div format for the grid-->
+            <div class="row">
+                <button class="sample" data-audio="audio/ah-ha.mp3"><strong>1.</strong> ah-ha</button>
+                <button class="sample" data-audio="audio/backofthenet.mp3"><strong>2.</strong> back of the net</button>
+                <button class="sample" data-audio="audio/bangoutoforder.mp3"><strong>3.</strong> bang out of order</button>
+            </div>
+            <div class="row">
+                <button class="sample" data-audio="audio/dan.mp3"><strong>4.</strong> dan</button>
+                <button class="sample" data-audio="audio/emailoftheevning.mp3"><strong>5.</strong> email of the evening</button>
+                <button class="sample" data-audio="audio/hellopartridge.mp3"><strong>6.</strong> hello partridge</button>
+            </div>
+            <div class="row">
+                <button class="sample" data-audio="audio/iateascotchegg.mp3"><strong>7.</strong> i ate scotch egg</button>
+                <button class="sample" data-audio="audio/imconfused.mp3"><strong>8.</strong> i'm confused</button>
+                <button class="sample" data-audio="audio/ah-ha.mp3"><strong>9.</strong> ah-ha</button>
+            </div>
+        </section>
+    </main>
+    <!--link to external js file -->
+    <script src="index.js"></script>
+</body>
+</html>

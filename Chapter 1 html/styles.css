@@ -1,0 +1,48 @@
+/* style of the body */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+  }
+  /*style of the heading*/
+  header {
+    background-color: #726a6a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  section {
+    padding: 30px;
+  }
+  
+  h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    overflow-x: auto;
+    border-radius: 5px;
+  }
+  
+  code {
+    font-family: Consolas, monospace;
+  }
+
+  

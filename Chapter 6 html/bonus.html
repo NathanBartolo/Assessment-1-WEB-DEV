@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Create an interactive RGB colour guessing game. The game should:
+
+Present the user with the rgb value they need to guess
+Present the user with at least three possible colour options including the correct colour.
+The possible options should be interactive and when clicked inform the user if they were correct or incorrect.
+The game should continue until they player has run out of lives
+At the end of the game the user should be presented with a final score and ability to replay the game
+Include index.html, style.css and index.js files.
+Include Comments throughout every file.
+Implement clean and professional creative styling.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Color Game</title>
+    <!--link to css file-->
+    <link rel="stylesheet" href="style2.css">
+    <!--link to google font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+</head>
+<body>
+    <!--called a header tag for heading-->
+    <header>
+        <h1>RGB Color Game</h1>
+    </header>
+    <!--div container for the main layout of the games-->
+    <div id="container">
+        <div id="color-display"></div>
+        <div id="options-container"></div>
+        <p id="message"></p>
+        <p id="score">Score: <span id="score-value">0</span></p>
+        <button id="play-again-btn">Play Again</button><!--button tag for play again-->
+    </div>
+    <script src="index.js"></script> <!-- link to js file -->
+</body>
+</html>

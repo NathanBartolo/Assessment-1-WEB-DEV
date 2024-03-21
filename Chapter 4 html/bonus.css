@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body styles */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+/*heading style*/
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+/*make the list aligned horizontal*/
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+/*hover effect*/
+nav ul li a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+/*overview style*/
+/*added margin to put the box on the center and not touch the page*/
+.overview {
+    text-align: center;
+    background-color: #e4e4e4;
+    padding: 50px;
+    margin: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Header, Main, Footer */
+    
+}
+
+/*resoures styles*/
+.last {
+    display: flex;
+    justify-content: space-between;
+    
+}
+/*style for the column*/
+main {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+}
+
+section {
+    margin-bottom: 1px;
+}
+
+h2 {
+    margin-bottom: 1px;
+}
+/*style for the two box*/
+.module,
+.assignment {
+    background-color: #e4e4e4;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.module h3,
+.assignment h3 {
+    color: #333;
+}
+
+.resources {
+    margin: 50px;
+}
+/*style for resources*/
+.resources ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 30px; /* Gap between buttons */
+    justify-content: start; /* Align items to the left */
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.resources ul li {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+
+
+.resources ul li a {
+    display: block;
+    width: 400px; 
+    height: 200px; 
+    line-height: 150px; /* Center content vertically */
+    text-decoration: none;
+    color: #333; /* Set text color */
+    background-color: #e4e4e4; /* Button background color */
+    border: 1px solid #ccc; /* Button border */
+    border-radius: 5px;
+}
+/*hover effect*/
+.resources ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+    background-color: #f0f0f0; /* Button background color on hover */
+}
+/*sidebar style*/
+.sidebar {
+    background-color: #e4e4e4;
+    flex: 0 0 300px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 10px;
+}
+/*footer style*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Imagine you have been employed to build a single-page web application that manages a study plan for the Web Development module on the Creative Computing course. Use HTML and CSS to mock-up what this application would look like, without adding any interactivity. You must include:
+
+Wireframe (add image to the directory);
+Header, Navigation menu, main content and a footer;
+The main content must be split into two or three columns;
+Five demo items;
+Your HTML should use semantically correct elements;
+An external style.css file;
+The use of at least one button;
+The page does not need to be interactive;
+You should focus on the structure and visual layout of the page, but also consider design too;
+Commenting throughout.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bonus.css">
+    <title>Web Development Study Plan</title>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="overview" class="overview">
+        <h2>Overview</h2>
+        <p>
+            Overview content here.</p>
+    </section>
+
+    <div class="container">
+        <main>
+            <section id="modules">
+                <h2>Modules</h2>
+                <article class="module">
+                    <h3>Module 1</h3>
+                    <p>Module 1 description.</p>
+                </article>
+                <article class="module">
+                    <h3>Module 2</h3>
+                    <p>Module 2 description.</p>
+                </article>
+                <article class="module">
+                    <h3>Module 3</h3>
+                    <p>Module 3 description.</p>
+                </article>
+            </section>
+
+            <section id="assignments">
+                <h2>Assignments</h2>
+                <article class="assignment">
+                    <h3>Assignment 1</h3>
+                    <p>Assignment 1 description.</p>
+                </article>
+                <article class="assignment">
+                    <h3>Assignment 2</h3>
+                    <p>Assignment 2 description.</p>
+                </article>
+                <article class="assignment">
+                    <h3>Assignment 3</h3>
+                    <p>Assignment 3 description.</p>
+                </article>
+            </section>
+        </main>
+        
+        <section class="resources" id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <li><a href="#">Resource 1</a></li>
+                <li><a href="#">Resource 2</a></li>
+                <li><a href="#">Resource 3</a></li>
+                <li><a href="#">Resource 4</a></li>
+            </ul> 
+        </section>
+    </div>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

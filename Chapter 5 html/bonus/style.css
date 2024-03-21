@@ -1,0 +1,54 @@
+/*main body style*/
+body {
+    font-family: 'Fredoka One', sans-serif; /* Using Fredoka One font */
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/736x/67/a5/25/67a525f8158c43a71ffaba7d3784fe23.jpg');
+}
+/*heading style*/
+header {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 80px;
+}
+/*style for the soundboard*/
+.soundboard {
+    display: flex;
+    flex-direction: column;/*to display the boxes horizontally*/
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; /* used this to fill empty space */
+}
+
+.row {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+/* style of the box*/
+.sample {
+    font-family: 'Fredoka One', sans-serif; /* Using Fredoka One font */
+    width: 300px;
+    height: 120px;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 15px 30px;
+    border: 5px solid black;
+    color: #000000;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/*hover effect*/
+.sample:hover {
+    background-color: #2d3135;
+}
+.samples strong {
+    font-weight: bold;
+}

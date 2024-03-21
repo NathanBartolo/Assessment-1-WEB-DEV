@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Imagine you have been employed to build a single-page web application that manages a study plan for the Web Development module on the Creative Computing course. Use HTML and CSS to mock-up what this application would look like, without adding any interactivity. You must include:
+
+Wireframe (add image to the directory);
+Header, Navigation menu, main content and a footer;
+The main content must be split into two or three columns;
+Five demo items;
+Your HTML should use semantically correct elements;
+An external style.css file;
+The use of at least one button;
+The page does not need to be interactive;
+You should focus on the structure and visual layout of the page, but also consider design too;
+Commenting throughout.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to external css file-->
+    <link rel="stylesheet" href="bonus.css">
+    <title>Web Development Study Plan</title>
+</head>
+<body>
+    <!--called a header section for heading-->
+    <header>
+        <!--main title-->
+        <h1>Web Development Study Plan</h1>
+        <!--navigation menu-->
+        <nav>
+            <ul>
+                <!--href for buttons on the nav bar-->
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--i used section to align the layout semantically-->
+    <!--overview section-->
+    <section id="overview" class="overview">
+        <h2>Overview</h2>
+        <!--description -->
+        <p>
+            The Web Development study plan is a comprehensive guide designed to equip learners with essential skills in HTML, CSS, and JavaScript. Through structured modules, practical assignments, and curated resources, participants will gain proficiency in web development fundamentals, enabling them to create dynamic and visually appealing websites with confidence and expertise.</p>
+    </section>
+    <!--container for the main content-->
+    <div class="container">
+        <main>
+            <!--called a modules section-->
+            <section id="modules">
+                <h2>Modules</h2>
+                <!--called articles for the module-->
+                <article class="module">
+                    <h3>HTML Basics</h3>
+                    <p>Learn the fundamentals of HTML, including tags, attributes, and document structure.</p>
+                </article>
+                <article class="module">
+                    <h3>CSS Styling</h3>
+                    <p>Explore CSS syntax, selectors, properties, and styling techniques for web pages.</p>
+                </article>
+                <article class="module">
+                    <h3>JavaScript Essentials</h3>
+                    <p>Understand JavaScript fundamentals such as variables, functions, control structures, and DOM manipulation.</p>
+                </article>
+            </section>
+            <!--called assignments section-->
+            <section id="assignments">
+                <h2>Assignments</h2>
+                <!--called article for the section-->
+                <article class="assignment">
+                    <h3>Build a webpage</h3>
+                    <p>Create a personal webpage using HTML to showcase your interests and skills.</p>
+                </article>
+                <article class="assignment">
+                    <h3>Styling</h3>
+                    <p>Apply CSS styles to enhance the visual appeal and layout of your HTML project.</p>
+                </article>
+                <article class="assignment">
+                    <h3>JavaScript Challenge</h3>
+                    <p>Develop interactive features for your webpage using JavaScript, such as form validation or dynamic content.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+    <!--div calass for the resources box-->
+    <div class="last">
+        <section class="resources" id="resources">
+            <h2>Resources</h2>
+            <ul>
+                <!--href for buttons-->
+                <li><a href="https://www.w3schools.com/">Web Development Guidebook</a></li>
+                <li><a href="https://www.w3schools.com/">Online Tutorials</a></li>
+                <li><a href="https://www.w3schools.com/">Code Editors</a></li>
+                <li><a href="https://www.w3schools.com/">Community Forums</a></li>
+            </ul> 
+        </section>
+        <!--called aside tag for the sidebar box-->
+        <aside class="sidebar">
+            <h2>What is html and css?</h2>
+            <p>HTML is a markup language used to create static web pages and web applications. CSS is a style sheet language responsible for the presentation of documents written in a markup language.</p>
+        </aside>
+    </div>
+    <!--footer section-->
+    <footer>
+        <p>&copy; 2024 Creative Computing</p>
+    </footer>
+</body>
+</html>
